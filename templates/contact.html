@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+
+{% block title %} Contact Us {% endblock title %}
+{% block body %}
+
+<div class="container-fluid px-0">
+    <img src="/static/img/13.jpg" class="d-block w-100" alt="...">
+</div>
+<div class="container">
+    <H1 class="text-center my-4"> Contact Us </H1>
+    <h5 class="text-center my-3"> Call us now @ 0123456789 , 0215315645 , 5768514561</h6>
+
+    <form method="post" action="/contact">
+    {% csrf_token %}
+        <div class="mb-3">
+            <label for="Name" class="form-label"> Name</label>
+            <input type="text" class="form-control" id="name" name="name" aria-describedby="emailHelp"
+                placeholder="enter your name">
+
+        </div>
+        <div class="mb-3">
+            <label for="phone" class="form-label"> Phone Number</label>
+            <input type="phone" class="form-control" id="phone" name="phone" aria-describedby="emailHelp"
+                placeholder="enter your number">
+
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" name="email" aria-describedby="emailHelp"
+                placeholder="enter your email">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+      
+
+
+        <div class="form-floating">
+            <textarea class="form-control" name="desc" id="floatingTextarea2"
+                style="height: 100px"></textarea>
+            <label for="floatingTextarea2">Leave a comment here! </label>
+        </div>
+
+
+        <button type="submit" class="btn btn-dark my-3">Submit</button>
+    </form>
+    <p>If you click the "Submit" button, the form-data will be sent to H-Fitness. </p>
+
+    
+    
+    
+    <hr>
+
+
+{% comment %} <footer align="center">
+    <p>@copyright H-Fitness 2020-21 All Rights reserved</p>
+</footer> {% endcomment %}
+
+
+</div>
+
+
+
+
+{% endblock body %}

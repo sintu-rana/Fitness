@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+
+{% block title %} H-Fitness Challenges{% endblock title %}
+{% block body %}
+
+<main class="container-fluid">
+  <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
+    <div class="col-md-15 px-0">
+      <h1 class="display-4 fst-italic">Recommit to Your Goals</h1>
+      <p class="lead my-3">Your path to a successful year starts here. Created in collaboration with trusted experts and bolstered by the supportive H-FITNESS community, our READY challenges are structured to help you recommit to yourself, develop doable new habits and reach your goals.</p>
+    </div>
+  </div>
+
+  <div class="row mb-2">
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          {% comment %} <strong class="d-inline-block mb-2 text-primary">World</strong> {% endcomment %}
+          <h3 class="mb-0">The 30-Day Push-Up Challenge</h3>
+          <p class="card-text mb-auto">Push-ups are a classic exercise for a reason: They deliver.This challenge helps you master your form, Discover new variations and build up to doing 60 push-ups in one day</p>
+          {% comment %} <a href="/contact" class="stretched-link">Learn More</a> {% endcomment %}
+          <a class="btn btn-secondary" href="/pushupchallenge" role="button">Learn More</a>
+          {% comment %} <a herf="/contact" class="btn btn-secondary">Learn More</a> {% endcomment %}
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img src="/static/img/push.webp" class="d-block w-100" alt="...">
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <h3 class="mb-0">The 4 Week Plank Challenge</h3>
+          <p class="mb-auto">Your core powers everything you do. Each day of this challenge, You'll try a new plank variation to improve your core strenght and endurance.</p>
+          <a class="btn btn-secondary" href="/plankchallenge" role="button">Learn More</a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img src="/static/img/plankch.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          {% comment %} <strong class="d-inline-block mb-2 text-primary">World</strong> {% endcomment %}
+          <h3 class="mb-0">The 30-Day Burpee Challenge</h3>
+          <p class="card-text mb-auto">Get ready for the ultimate challenge: Burpees! This exercise works every muscle head to toe while pushing your cardiobvascular fitness to the limit. Add reps each day to build strength and edurance</p>
+          {% comment %} <a href="/contact" class="stretched-link">Learn More</a> {% endcomment %}
+          <a class="btn btn-secondary" href="/burpeechallenge" role="button">Learn More</a>
+          {% comment %} <a herf="/contact" class="btn btn-secondary">Learn More</a> {% endcomment %}
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img src="/static/img/burpee/burpee0.webp" class="d-block w-100" alt="...">
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <h3 class="mb-0">The 4 Week Legs Challenge</h3>
+          <p class="mb-auto">Your core powers everything you do. Each day of this challenge, You'll try a new plank variation to improve your core strenght and endurance.</p>
+          <a class="btn btn-secondary" href="/legchallenge" role="button">Learn More</a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img src="/static/img/legs/leg0.webp" class="d-block w-100" alt="...">
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<hr>
+
+{% endblock body %}
